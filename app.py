@@ -35,7 +35,10 @@ client = Groq(api_key=GROQ_API_KEY)
 nlp = spacy.load("en_core_web_sm")
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
-chroma_client = chromadb.Client(Settings(persist_directory="vectordb", anonymized_telemetry=False))
+chroma_client = chromadb.Client(Settings(
+    persist_directory="/tmp/vectordb",
+    anonymized_telemetry=False
+))
 collection = chroma_client.get_or_create_collection(name="docs")
 
 # ------------------------
@@ -955,3 +958,4 @@ with st.sidebar:
     st.markdown("---")
 
     st.markdown('<div style="font-size:0.75rem; color:#94a3b8; text-align:center;">Groq LLM · spaCy · ChromaDB · Streamlit</div>', unsafe_allow_html=True)
+
