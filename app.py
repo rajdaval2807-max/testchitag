@@ -24,7 +24,7 @@ except:
 # CONFIG
 # ------------------------
 try:
-    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+    GROQ_API_KEY = your_key_here
 except:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
     if not GROQ_API_KEY:
@@ -958,4 +958,5 @@ with st.sidebar:
     st.markdown("---")
 
     st.markdown('<div style="font-size:0.75rem; color:#94a3b8; text-align:center;">Groq LLM · spaCy · ChromaDB · Streamlit</div>', unsafe_allow_html=True)
+
 
