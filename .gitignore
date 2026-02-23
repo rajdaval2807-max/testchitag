@@ -1,0 +1,158 @@
+# ==========================================
+# AI-DOC .gitignore
+# ==========================================
+
+# ==========================================
+# DATA FILES (TOO LARGE FOR GITHUB)
+# ==========================================
+data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+
+# ==========================================
+# VECTOR DATABASE (GENERATED AT RUNTIME)
+# ==========================================
+vectordb/
+chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# SECRETS & API KEYS
+# ==========================================
+.streamlit/secrets.toml
+.env
+.env.local
+.env.*.local
+*.key
+secrets.toml
+
+# ==========================================
+# PYTHON
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# VIRTUAL ENVIRONMENTS
+# ==========================================
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ==========================================
+# JUPYTER NOTEBOOK
+# ==========================================
+.ipynb_checkpoints
+*.ipynb
+
+# ==========================================
+# MODELS (OPTIONAL - UNCOMMENT IF TOO LARGE)
+# ==========================================
+# models/
+# *.pkl
+# *.h5
+# *.pt
+# *.pth
+# *.onnx
+
+# ==========================================
+# IDE & EDITORS
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# LOGS & TEMPORARY FILES
+# ==========================================
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+logs/
+*.bak
+
+# ==========================================
+# TESTING
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ==========================================
+# STREAMLIT
+# ==========================================
+.streamlit/secrets.toml
+
+# ==========================================
+# GIT
+# ==========================================
+.git/
+*.orig
+
+# ==========================================
+# MISC
+# ==========================================
+.cache/
+*.pyc
+*.pyo
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
