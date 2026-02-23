@@ -953,4 +953,5 @@ with st.sidebar:
             """, unsafe_allow_html=True)
 
     st.markdown("---")
+
     st.markdown('<div style="font-size:0.75rem; color:#94a3b8; text-align:center;">Groq LLM · spaCy · ChromaDB · Streamlit</div>', unsafe_allow_html=True)
